@@ -64,5 +64,16 @@ body {
     width: 100%;
     font-size: 20px;
 }
+.extraButtons {
+    display: flex;
+    flex:1;
+}
+.functionButtons {
+    aspect-ratio: 0;
+    flex: 1;
+    max-width: 190px;
+    flex-basis:
+    justify-content: space-evenly;
+}
 
 
