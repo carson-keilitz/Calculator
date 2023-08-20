@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="container">
@@ -12,37 +13,43 @@
             <div class="outputBox"></div>
         </div>
         <div class="buttonContainer">   
-            <div class="extraButtons">
+            <!-- <div class="extraButtons">
                 <div class="col">
                     <button class="row functionButtons">Clear</button>
                 </div>
                 <div class="col">
                     <button class="row functionButtons">Delete</button>
                 </div>
-            </div>   
+            </div>    -->
             <div class="col">
-                <button class="row">7</button>
-                <button class="row">4</button>
-                <button class="row">1</button>
-                <button class="row">0</button>
+                <button class="row" data-clear="clear">clear</button>
+                <button class="row">delete</button>
+                <button class="row">%</button>
+                <button class="row" data-operator="/">/</button>
             </div>
             <div class="col">
-                <button class="row">8</button>
-                <button class="row">5</button>
-                <button class="row">2</button>
+                <button class="row" data-number="7">7</button>
+                <button class="row" data-number="4">4</button>
+                <button class="row" data-number="1">1</button>
+                <button class="row" data-operator="X">X</button>
+            </div>
+            <div class="col">
+                <button class="row" data-number="8">8</button>
+                <button class="row" data-number="5">5</button>
+                <button class="row" data-number="2">2</button>
+                <button class="row" data-operator="-">-</button>
+            </div>
+            <div class="col">
+                <button class="row" data-number="9">9</button>
+                <button class="row" data-number="6">6</button>
+                <button class="row" data-number="3">3</button>
+                <button class="row" data-operator="+">+</button>
+            </div>
+            <div class="col">
+                <button class="row" data-number="0">0</button>
+                <button class="row">+/-</button>
                 <button class="row">.</button>
-            </div>
-            <div class="col">
-                <button class="row">9</button>
-                <button class="row">6</button>
-                <button class="row">3</button>
-                <button class="row">+</button>
-            </div>
-            <div class="col">
-                <button class="row">/</button>
-                <button class="row">X</button>
-                <button class="row">-</button>
-                <button class="row">=</button>
+                <button class="row equal" data-operator="=">=</button>
             </div>
         </div>
     </div>
